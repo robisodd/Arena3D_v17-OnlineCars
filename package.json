@@ -1,0 +1,157 @@
+{
+    "author": "robisodd",
+    "dependencies": {
+        "watch_info": "https://builds.cloudpebble.net/d60bd791-95df-415a-94bf-410ce2779c4d/package.tar.gz"
+    },
+    "keywords": [],
+    "name": "arena3d-v0.17",
+    "pebble": {
+        "displayName": "Arena3D Online v0.17",
+        "enableMultiJS": true,
+        "messageKeys": {
+            "D": 12,
+            "F": 8,
+            "I": 5,
+            "U": 9,
+            "X": 6,
+            "Y": 7,
+            "err_message": 4,
+            "message": 1,
+            "status": 0,
+            "system_message": 3,
+            "userkey": 2
+        },
+        "projectType": "native",
+        "resources": {
+            "media": [
+                {
+                    "file": "images/Blue Car.png",
+                    "name": "BLUE_CAR_2",
+                    "targetPlatforms": null,
+                    "type": "bitmap"
+                },
+                {
+                    "file": "images/wood.png",
+                    "name": "WOOD",
+                    "type": "bitmap"
+                },
+                {
+                    "file": "images/grass.png",
+                    "name": "GRASS",
+                    "type": "bitmap"
+                },
+                {
+                    "file": "images/ceiling.png",
+                    "name": "CEILING_LIGHTS",
+                    "type": "bitmap"
+                },
+                {
+                    "file": "images/brick.png",
+                    "name": "WALL_BRICK",
+                    "type": "bitmap"
+                },
+                {
+                    "file": "images/Trogdor-2.png",
+                    "name": "TROGDOR",
+                    "type": "bitmap"
+                },
+                {
+                    "file": "images/Tile.png",
+                    "name": "TILE",
+                    "type": "bitmap"
+                },
+                {
+                    "file": "images/TEST-64-2b.png",
+                    "name": "SPRITE_64_2B",
+                    "type": "bitmap"
+                },
+                {
+                    "file": "images/TEST-32-4b.png",
+                    "name": "SPRITE_32_4B",
+                    "type": "bitmap"
+                },
+                {
+                    "file": "images/TEST-32-2b.png",
+                    "name": "SPRITE_32_2B",
+                    "type": "bitmap"
+                },
+                {
+                    "file": "images/TEST-32-1b.png",
+                    "name": "SPRITE_32_1B",
+                    "type": "bitmap"
+                },
+                {
+                    "file": "images/TEST-32-1b-trans2.png",
+                    "name": "TEST_32_1B_TRANS",
+                    "type": "png-trans"
+                },
+                {
+                    "file": "images/Stone.png",
+                    "name": "STONE",
+                    "type": "bitmap"
+                },
+                {
+                    "file": "images/Smiley-trans.png",
+                    "name": "SMILEY",
+                    "type": "png-trans"
+                },
+                {
+                    "file": "images/RedColorBrick.png",
+                    "name": "REDBRICK",
+                    "type": "bitmap"
+                },
+                {
+                    "file": "images/Prize Box.png",
+                    "name": "PrizeBox",
+                    "type": "bitmap"
+                },
+                {
+                    "file": "images/Blue Car - 6bit Single Frame Sideways.png",
+                    "name": "BLUE_CAR",
+                    "targetPlatforms": null,
+                    "type": "bitmap"
+                },
+                {
+                    "file": "images/Blue Car - 6bit Sideways Transparent.png",
+                    "name": "BLUECAR",
+                    "targetPlatforms": null,
+                    "type": "bitmap"
+                },
+                {
+                    "file": "images/Ball-8.png",
+                    "name": "BALL_8",
+                    "type": "bitmap"
+                },
+                {
+                    "file": "images/Ball-64.png",
+                    "name": "BALL_64",
+                    "type": "bitmap"
+                },
+                {
+                    "file": "images/Ball-32.png",
+                    "name": "BALL_32",
+                    "type": "bitmap"
+                },
+                {
+                    "file": "images/Ball-16.png",
+                    "name": "BALL_16",
+                    "type": "bitmap"
+                },
+                {
+                    "file": "images/3DICON.png",
+                    "name": "ICON",
+                    "type": "bitmap"
+                }
+            ]
+        },
+        "sdkVersion": "3",
+        "targetPlatforms": [
+            "diorite"
+        ],
+        "uuid": "667971ee-babe-4ae6-8b88-9a17401af25e",
+        "watchapp": {
+            "watchface": false
+        }
+    },
+    "version": "0.17.0"
+}
