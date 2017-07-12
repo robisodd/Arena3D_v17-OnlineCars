@@ -221,11 +221,12 @@ void LoadSprites() {
       sprite[ResID].width = gbitmap_get_bounds(sprite[ResID].bmp).size.w;
       sprite[ResID].height = gbitmap_get_bounds(sprite[ResID].bmp).size.h;
       sprite[ResID].bytes_per_row= log16(gbitmap_get_bytes_per_row(sprite[ResID].bmp));
+      //sprite[ResID].height = (gbitmap_get_bounds(sprite[ResID].bmp).size.h > 64) ? gbitmap_get_bounds(sprite[ResID].bmp).size.h : gbitmap_get_bounds(sprite[ResID].bmp).size.h / 8;
       LOG_DEBUG("Sprite %d: %d Bytes/row = 2<<%d (%dw x %dh) %s", ResID, gbitmap_get_bytes_per_row(sprite[ResID].bmp), sprite[ResID].bytes_per_row, sprite[ResID].width, sprite[ResID].height, get_gbitmapformat_text(gbitmap_get_format(sprite[ResID].bmp)));
 
-      // Force 8-faced sprite size
-      if(sprite[ResID].height > 64) {
-        sprite[ResID].height /= 8;
+      // Assume tall sprites are 8-faced
+      if(gbitmap_get_bounds(sprite[ResID].bmp).size.h > 64) {
+        sprite[ResID].height = gbitmap_get_bounds(sprite[ResID].bmp).size.h / 8;
         //sprite[ResID].height = 48;  // Weird issue showing the image is only 128px high (should be 384px) -- Nevermind, .height was uint8_t, not uint16.  Fixed.
         LOG_DEBUG("Sprite %d: 8-faced (%dw x %dh)", ResID, sprite[ResID].width, sprite[ResID].height);
       }
